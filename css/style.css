@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Cormorant+Garamond:wght@300&family=Dancing+Script&display=swap');
+*{
+  margin:auto;
+  font-size: 62.5%;
+}
+.link{
+text-decoration: none;
+color: rgb(48, 48, 40);
+background-color: rgb(245, 245, 179);
+font-size: 1.5rem;
+justify-content: center;
+list-style: none;
+display: inline-block;
+position: relative;
+}
+.link ::after{
+  content: '';
+  background-color: beige;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.link :hover ::after{
+  transform: scale(1);
+}
+
+ul li a:hover{
+  background-color: orangered;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  
+  
+}
+li{
+  display: inline-block;
+  text-align: center;
+ 
+
+}
+h1{
+  list-style-type: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+}
+h2{
+  list-style-type: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.texto{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 100px;
+  }
+.footer{
+  font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10% ;
+    
+}
+.bodyindex {
+  background-image: url(./../assets/images/viñedos_n2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bodyrest{
+  background-image: url(./../assets/images/viñedos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodyvinos{
+  background-image: url(./../assets/images/botellas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodynosotros{
+  background-image: url(./../assets/images/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodyreservas{
+  background-image: url(./../assets/images/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuRest{
+    list-style-type: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.caja1{
+background-color: rgba(255, 255, 209, 0.753);
+width: 40%;
+height: 40%;
+float: center;
+margin-right: auto;
+margin-left: auto;
+} 
+.caja2{
+  background-color: rgba(255, 255, 209, 0.753);
+  width: 40%;
+  height: 40%;
+  float: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.textcaja1{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+}
+.textcaja2{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+}
+.textintos{
+  background-color: rgba(255, 255, 195, 0.76);
+}
+.tintos{
+  background-image: url(./../assets/images/vino\ tinto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-left: 550px;
+  transition: transform 2s;
+}
+.tintos:hover{
+  transform: scale(1.5,1.5);
+}
+.textblancos{
+  background-color: rgba(255, 255, 195, 0.76);
+}
+.blancos{
+  background-image: url(./../assets/images/vino\ blanco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-left:550px ;
+  transition: transform 2s;
+}
+.blancos:hover {
+  transform: scale(1.5, 1.5);
+}
+.textrosados{
+  background-color: rgba(255, 255, 195, 0.76);
+}
+.rosados{
+  background-image: url(./../assets/images/vinos\ rosados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-left: 550px;
+  transition: transform 2s;
+}
+.rosados:hover {
+  transform: scale(1.5, 1.5);
+}
+.titulosnosotros{
+  background-color: rgba(255, 248, 220, 0.555);
+}
+.fundadores{
+  background-color: rgba(247, 247, 199, 0.637);  
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.formulario{
+  background-color: rgba(245, 245, 220, 0.452);
+  list-style-type: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 10rem;
+  text-align: justify;
+  margin-top: 10px;
+}
+.ubicacionmapa{
+    background-color: rgba(255, 248, 220, 0.555);
+}
+.mapa{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+}
+.footerubi{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.icons-wrapper {
+display: center;
+justify-content: center;
+margin-top: 20px;
+}
+.icons-wrapper::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   border-radius: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+ }
+ .icon {
+   display: inline-block;
+   font-size: 35px;
+   animation: float infinite 4s ease-in;
+ }
+ .ri-instagram-line {
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .ri-facebook-circle-line {
+   color: #1877f2;
+   animation-delay: 0.5s;
+ }
+
+ .ri-whatsapp-line {
+   color: #25d366;
+   animation-delay: 1s;
+ }
+ @keyframes float {
+   0% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-25px);
+   }
+  100% {
+     transform: translateY(0);
+   }
+ }
+ @media screen and (max-width:600px) {
+  .contenedor{
+    width: 100%;
+  }
+ }

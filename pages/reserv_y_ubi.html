@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega Altube</title>
+  <link rel="stylesheet" href="./../assets/images/contacto.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="./../css/style.css">
+
+<body class="bodyreservas">
+<div class="contenedor">
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li><a class="link" href="./../index.html">Inicio</a></li>
+            <li><a class="link" href="./Restaurat.html">Restaurant</a></li>
+            <li><a class="link" href="./vinos.html">Vinos</a></li>
+            <li><a class="link" href="./nosotros.html">Nosotros</a></li>
+            <li><a class="link" href="./reserv_y_ubi.html">Reservas y Ubicacion</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="formulario">
+      <form action="validar.html">
+        <div>
+          <label for="nombre"> Nombre Completo </label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3"
+            maxlength="50" required autofocus autocomplete="off">
+        </div>
+        <div>
+          <label for="mail">Mail</label>
+          <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+        </div>
+        <fieldset>
+          <legend>Ingrese los siguientes Datos</legend>
+          <div>
+            <label for="fnac">Fecha de Nacimiento</label>
+            <input id="fnac" name="fecha_nac" type="date" required>
+            <input id="hnac" name="hora_nac" type="time" required>
+          </div>
+          <div>
+            <label for="edad">Indique su Edad</label>
+            <input id="edad" name="edad" type="number" min=1 max=100 required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Elementos seleccionables</legend>
+          <div>
+            <label for="prov">Indique Provincia</label>
+            <select name="provincia" id="prov">
+              <option value="Caba">Capital Federal</option>
+              <option value="Buenos Aires" selected>Bs. As.</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Cordoba">Cordoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Rios">Entre Rios</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquen">Neuquen</option>
+              <option value="Rio Negro">Rio Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Sgo. del Estero">Sgo. del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucuman">Tucuman</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Indique un Comentario</legend>
+          <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+          <br>
+          <input id="no_modifica" name="no_modifica" type="text" value="No se puede modificar" readonly>
+        </fieldset>
+        <div>
+          <fieldset>
+            <legend>Grabe o limpie el formulario</legend>
+            <input type="button" value="Cancelar">
+            <button>Prueba</button>
+            <input id="enviar" type="submit" value="Enviar">
+            <input id="reset" type="reset" value="Limpiar">
+          </fieldset>
+        </div>
+      </form>
+      <h1 class="ubicacionmapa">UBICACION</h1>
+      <hr>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26657.6828655205!2d-69.1606391373091!3d-33.365573772738855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dcd07cab22bc7%3A0x2cb3614db155dff9!2sTupungato%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1666918847713!5m2!1ses-419!2sar"
+        width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+    </main>
+    <footer class="footerubi">
+      <div class="icons-wrapper">
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-whatsapp-line icon"></i>
+      </div>
+    
+      <p>© 2022 - Todos los derechos reservados</p>
+    </footer>
+</div>
+</body>
+
+</html>
